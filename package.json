@@ -1,0 +1,27 @@
+{
+  "name": "jasont.dev-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasontdev/jasont.dev-new.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasontdev/jasont.dev-new/issues"
+  },
+  "homepage": "https://github.com/jasontdev/jasont.dev-new#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "liquidjs": "^9.40.0",
+    "prettier": "^2.7.1"
+  }
+}
