@@ -1,8 +1,11 @@
 ---
 layout: blog.liquid
+tags: blog
 date: "2022-04-07"
 title: "Migrating to AWS (again) pt. 2"
 ---
+
+# {{ title }}
 
 Fully migrating a website from one DNS provider, CDN and host
 has never gone smoothly for me. With so many moving parts

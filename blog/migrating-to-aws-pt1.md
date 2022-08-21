@@ -1,10 +1,11 @@
 ---
 layout: blog.liquid
+tags: blog
 date: "2022-04-06"
 title: "Migrating to AWS (again) pt. 1"
 ---
 
-# Migrating to AWS (again) pt. 1
+# {{ title }}
 
 After enjoying the simplicity of hosting my website
 using Vultr VPS, the number of dev jobs looking for AWS/Azure/GCP

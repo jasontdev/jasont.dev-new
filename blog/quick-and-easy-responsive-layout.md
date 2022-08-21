@@ -1,10 +1,13 @@
 ---
 layout: blog.liquid
+tags: blog
 date: "2022-03-05"
 title: "A quick and easy responsive Flexbox layout"
 description: "A quick and easy responsive layout using Flexbox only"
 ---
+# {{ title }}
 
+While learning the basics of web development, one thing I did often was
 start new projects. The goal is generally to get up and running
 as quick as possible so I can try out new ideas, techniques, libraries
 etc.

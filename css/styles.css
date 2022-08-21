@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: large;
   width: 100vw;
 }
@@ -84,4 +84,25 @@ body {
 
 .skill:nth-child(odd) {
   background: lightgrey;
+}
+
+.blog-index-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-index-title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.blog-index-title>a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-index-title>a:visited {
+  color: inherit;
 }
