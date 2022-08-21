@@ -5,6 +5,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: large;
+  width: 100vw;
 }
 
 .red {
@@ -65,7 +66,7 @@ body {
 
 .skill {
   display: flex;
-  height: 12rem;
+  min-height: 12rem;
   flex-wrap: wrap;
 }
 
@@ -73,10 +74,12 @@ body {
   font-size: xx-large;
   font-weight: bold;
   margin: auto;
+  padding: 0.5rem;
 }
 .skill-blurb {
   width: min(32rem, 100%);
   margin: auto;
+  padding: 0.5rem;
 }
 
 .skill:nth-child(odd) {
