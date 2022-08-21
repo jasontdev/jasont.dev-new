@@ -20,7 +20,7 @@ body {
 }
 
 .content {
-  padding: 1rem;
+  padding: 1rem 0.25rem 1rem 0.25rem;
 }
 
 .navbar {
@@ -68,18 +68,24 @@ body {
   display: flex;
   min-height: 12rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: xx-large;
   font-weight: bold;
-  margin: auto;
   padding: 0.5rem;
+  width: min(24rem, 100%);
 }
 .skill-blurb {
-  width: min(32rem, 100%);
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5rem;
+  width: min(24rem, 100%);
 }
 
 .skill:nth-child(odd) {
