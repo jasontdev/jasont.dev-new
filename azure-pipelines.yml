@@ -19,7 +19,7 @@ steps:
     npm install
     npx @11ty/eleventy
   displayName: 'npm install and build'
-- publish: $(System.DefaultWorkingDirectory)/_site;
+- publish: $(System.DefaultWorkingDirectory)/_site/;
   artifact: site;
 
 
