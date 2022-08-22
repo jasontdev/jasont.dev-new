@@ -1,4 +1,9 @@
 # Node.js
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/_site'
+    ArtifactName: 'site'
+    publishLocation: 'Container'
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -19,8 +24,7 @@ steps:
     npm install
     npx @11ty/eleventy
   displayName: 'npm install and build'
-- publish: $(System.DefaultWorkingDirectory)/_site/;
-  artifact: site;
+
 
 
 
