@@ -24,12 +24,11 @@ steps:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/_site/'
     ArtifactName: 'site'
     publishLocation: 'Container'
-- task: AzureFileCopy@4
+- task: AzureCLI@2
   inputs:
-    SourcePath: '$(System.DefaultWorkingDirectory)/_site/'
     azureSubscription: 'Azure subscription 1(7a7db31d-7c83-406c-baab-06e4a5e03074)'
-    Destination: 'AzureBlob'
-    storage: 'jasontdev'
-    ContainerName: '$web'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob upload-batch -s _site -d ''$web'' --account-name jasontdev'
 
 
