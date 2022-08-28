@@ -20,10 +20,11 @@
   "homepage": "https://github.com/jasontdev/jasont.dev-new#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@shopify/prettier-plugin-liquid": "^0.3.0",
+    "prettier": "^2.7.1"
   },
   "dependencies": {
-    "liquidjs": "^9.40.0",
-    "prettier": "^2.7.1"
+    "liquidjs": "^9.40.0"
   }
 }

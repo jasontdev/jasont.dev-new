@@ -5,6 +5,7 @@ date: "2022-03-05"
 title: "A quick and easy responsive Flexbox layout"
 description: "A quick and easy responsive layout using Flexbox only"
 ---
+
 # {{ title }}
 
 While learning the basics of web development, one thing I did often was
@@ -25,14 +26,14 @@ Here is the skeleton of our layout.
 ```html
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="index.css"/>
-<body>
-<div class="layout-container">
-  <div class="content-container">
-    <h1>Centered content</h1>
-  </div>
-</div>
-</body>
+  <link rel="stylesheet" href="index.css" />
+  <body>
+    <div class="layout-container">
+      <div class="content-container">
+        <h1>Centered content</h1>
+      </div>
+    </div>
+  </body>
 </html>
 ```
 
@@ -53,8 +54,8 @@ narrow on desktop and tablet.
 
 ```css
 .content-container {
-  width: min(650px, 100%)
-}  
+  width: min(650px, 100%);
+}
 ```
 
 Using `min(650px, 100%)` makes the layout responsive by
