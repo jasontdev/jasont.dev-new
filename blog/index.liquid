@@ -5,7 +5,7 @@ layout: layout.liquid
 {%- for blog in collections.blog reversed -%}
   <div class="blog-index-item">
     <div class="blog-index-title">
-      <a href="" {{ blog.url }}>{{ blog.data.title }}</a>
+      <a href="{{ blog.url }}">{{ blog.data.title }}</a>
     </div>
     <div>
       <em>{{ blog.data.date }}</em>
