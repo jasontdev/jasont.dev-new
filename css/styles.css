@@ -12,9 +12,13 @@ body {
 }
 
 .layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0.25rem 1rem 0.25rem 1rem;
   margin: auto;
   width: min(64rem, 100%);
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -110,4 +114,14 @@ body {
 
 .blog-index-title>a:visited {
   color: inherit;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.copyright {
+  font-size: smaller; 
 }

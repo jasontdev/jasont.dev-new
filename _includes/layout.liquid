@@ -7,11 +7,17 @@
     <title>Jason Telfer - web developer</title>
     <link rel="stylesheet" href="{{ "/css/styles.css" }}" />
     <link rel="stylesheet" href="{{ "/css/prism.css" }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" />
 </head>
 <body>
 <div class="layout">
-    {% include "navbar.liquid" %}
-    <div class="content">{{ content }}</div>
+    <div>
+        {% include "navbar.liquid" %}
+        <div class="content">{{ content }}</div>
+    </div>
+    <div class="footer">
+        {% include "contact.liquid" %}
+    </div>
 </div>
 </body>
 </html>
