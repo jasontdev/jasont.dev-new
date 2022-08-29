@@ -72,6 +72,7 @@ body {
   min-height: 12rem;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .skill-title {
@@ -83,6 +84,7 @@ body {
   padding: 0.5rem;
   width: min(24rem, 100%);
 }
+
 .skill-blurb {
   display: flex;
   justify-content: center;
