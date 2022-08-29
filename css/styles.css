@@ -128,3 +128,17 @@ body {
 .copyright {
   font-size: smaller;
 }
+
+.portfolio-index-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.portfolio-index-words {
+  width: min(12rem, 100%);
+}
+
+.portfolio-index-image {
+  width: min(12rem, 100%);
+}
