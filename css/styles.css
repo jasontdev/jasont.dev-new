@@ -129,16 +129,38 @@ body {
   font-size: smaller;
 }
 
-.portfolio-index-item {
-  display: flex;
-  flex-wrap: wrap;
+.portfolio-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.portfolio-item {
+  max-width: min(24rem, 100%);
+}
+
+.portfolio-item>figure {
+  position: relative;
+}
+
+.portfolio-item>figure>figcaption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  padding: 0.5rem;
 }
 
-.portfolio-index-words {
-  width: min(12rem, 100%);
+.portfolio-item>figure>figcaption>a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.portfolio-index-image {
-  width: min(12rem, 100%);
+.portfolio-item>figure>figcaption>a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio-item>figure>img {
+  width: 100%;
 }

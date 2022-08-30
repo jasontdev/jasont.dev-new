@@ -2,10 +2,15 @@
 layout: layout.liquid
 ---
 <h1>Portfolio</h1>
-{%- for item in collections.portfolio -%}
-    <h2><a href="{{item.url}}">{{item.data.title}}</a></h2>
-    <div class="portfolio-index-item">
-        <img class="portfolio-index-image" src="{{item.fileSlug}}/{{item.data.image}}">
-        <div class="portfolio-image-words">{{item.data.description}}</p></div>
+<div class="portfolio-index">
+  {%- for item in collections.portfolio -%}
+    <div class="portfolio-item">
+      <figure>
+        <img class="portfolio-item-image" src="{{item.fileSlug}}/{{item.data.image}}">
+        <figcaption>
+          <a href="{{item.url}}">{{ item.data.title }}</a>
+        </figcaption>
+      </figure>
+    </div>
+  {%- endfor -%}
 </div>
-{%- endfor -%}
