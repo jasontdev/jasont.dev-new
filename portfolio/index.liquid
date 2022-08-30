@@ -3,7 +3,7 @@ layout: layout.liquid
 ---
 <h1>Portfolio</h1>
 <div class="portfolio-index">
-  {%- for item in collections.portfolio -%}
+  {%- for item in collections.portfolio reversed -%}
     <div class="portfolio-item">
       <figure>
         <img class="portfolio-item-image" src="{{item.fileSlug}}/{{item.data.image}}">
