@@ -105,6 +105,14 @@ body {
   }  
 }
 
+@media (max-width: 480px) {
+  .blog>p>img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }  
+}
+
 .blog-index-item {
   display: flex;
   flex-direction: column;
