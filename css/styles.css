@@ -97,6 +97,14 @@ body {
   background: lightgrey;
 }
 
+@media (min-width: 481px) {
+  .blog>p>img{
+    display: block;
+    max-width: 50%;
+    margin: auto;
+  }  
+}
+
 .blog-index-item {
   display: flex;
   flex-direction: column;
@@ -129,38 +137,58 @@ body {
   font-size: smaller;
 }
 
-.portfolio-index {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+@media (max-width: 480px) {
+  .portfolio-index {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1279px) {
+  .portfolio-index {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .portfolio-index {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .portfolio-item {
-  max-width: min(24rem, 100%);
+  width: 100%;
 }
 
-.portfolio-item>figure {
-  position: relative;
+.portfolio-item > figure {
+  margin: 0;
+  padding: 0;
 }
 
-.portfolio-item>figure>figcaption {
+.portfolio-item > figure > figcaption {
   color: white;
-  background-color: rgba(0, 0, 0, 0.75);
-  position: absolute;
-  bottom: 0;
+  background-color: black;
   width: 100%;
   padding: 0.5rem;
+  box-sizing: border-box;
 }
 
-.portfolio-item>figure>figcaption>a {
+.portfolio-item > figure > figcaption > a {
   color: inherit;
   text-decoration: none;
 }
 
-.portfolio-item>figure>figcaption>a:visited {
+.portfolio-item > figure > figcaption > a:visited {
   color: inherit;
   text-decoration: none;
 }
 
-.portfolio-item>figure>img {
+.portfolio-item > figure > img {
   width: 100%;
+  height: auto;
 }
