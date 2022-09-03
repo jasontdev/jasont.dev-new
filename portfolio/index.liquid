@@ -6,7 +6,7 @@ layout: layout.liquid
   {%- for item in collections.portfolio reversed -%}
     <div class="portfolio-item">
       <figure>
-        <img class="portfolio-item-image" src="{{item.fileSlug}}/{{item.data.image}}">
+        <img class="portfolio-item-image" src="/portfolio/{{item.fileSlug}}/{{item.data.image}}">
         <figcaption>
           <a href="{{item.url}}">{{ item.data.title }}</a>
         </figcaption>
